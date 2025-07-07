@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
 import { TrackModule } from './track/track.module';
-
+import * as dotenv from 'dotenv';
 @Module({
   imports: [
     ConfigModule.forRoot({
